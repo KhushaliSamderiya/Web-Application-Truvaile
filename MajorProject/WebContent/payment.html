@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Payment Form | Truvaile</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+	<style>
+	
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'PT Serif', serif;
+ 
+}
+
+body{
+  background:"black";
+  margin: 0 10px;
+}
+
+.payment {
+   
+    background: #f8f8f8;
+    max-width: 360px;
+    margin: 20px;
+    margin-top: 7rem;
+    margin-left: -2rem;
+    height: auto;
+    padding: 30px;
+    padding-top: 50px;
+    border-radius: 5px;
+    position: relative;
+    border: 1px solid black;
+}
+
+.payment h2{
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  color: #0d3c61;
+}
+
+.form .label{
+  display: block;
+  color: #555555;
+  margin-bottom: 6px;
+}
+
+.input{
+  padding: 13px 0px 13px 25px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  outline: none;
+  font-size: 16px;
+  color: #555555;
+}
+
+.card-grp{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item{
+  width: 48%;
+}
+
+.space{
+  margin-bottom: 20px;
+}
+
+.icon-relative{
+  position: relative;
+}
+
+.icon-relative .fas,
+.icon-relative .far{
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  font-size: 20px;
+  color: #555555;
+}
+
+.btn{
+  width: 8rem;
+  height: 3rem ;
+  margin-top: 20px;
+  margin-left: 5rem;
+  background: #FCA5A5;
+  padding: 12px;
+  text-align: center;
+  color: #f8f8f8;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 420px){
+  .card-grp{
+    flex-direction: column;
+  }
+  .card-item{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .btn{
+    margin-top: 20px;
+  }
+}
+</style>
+</head>
+<body>
+<section class="container" height: 100vh; margin-top: 2rem;>
+<div class="payment-container" style= "display: inline-block; margin-left: 7rem; margin-top: -2.5rem; border: 10px solid  #C6F2D6; width: 60rem; height: 90vh;  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);"  >
+    <div class="payment-img" style="float:left; margin-top: 6rem; margin-left: 6rem; " >
+        <img src="Images/payment.svg" height= "480px"; width="450rem">
+       </div>
+
+<div class="wrapper" style="float:right; " >
+  <div class="payment">
+      <form action= 'PayServlet' method="post" >  
+    <h2>Payment Gateway</h2>
+    <div class="form">
+      <div class="card space icon-relative">
+        <label class="label">Card holder:</label>
+        <input type="text" class="input" name="uname" placeholder="Coding Market" required />
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="card space icon-relative">
+        <label class="label">Card number:</label>
+        <input type="text" class="input" name="number" data-mask="0000 0000 0000 0000" placeholder="Card Number" required />
+        <i class="far fa-credit-card"></i>
+      </div>
+      <div class="card-grp space">
+        <div class="card-item icon-relative">
+          <label class="label">Expiry date:</label>
+          <input type="text" name="expiryDate" class="input" data-mask="00 / 00"  placeholder="00 / 00" required />
+          <i class="far fa-calendar-alt"></i>
+        </div>
+        <div class="card-item icon-relative">
+          <label class="label">CVC:</label>
+          <input type="text" class="input" name="pin" data-mask="000" placeholder="000" required>
+          <i class="fas fa-lock"></i>
+        </div>
+      </div>
+        <input type="submit" class="btn" value="Pay"/>
+         </div>
+    </form>
+  </div>
+</div>
+</div>
+</section>
+<footer style="text-align: center; margin-top: 4.5rem;">
+    <p>© 2020 Truvaile Trips Pvt Ltd.</p>
+</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+</body>
+</html>

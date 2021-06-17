@@ -1,0 +1,19 @@
+.fluid-container {
+   margin: 2rem 7rem;
+   box-sizing: border-box;
+}
+
+.about-heading{
+    text-align: center;
+    font-size: x-large;
+    text-transform: uppercase;
+    padding: 3rem;
+    font-family: "Cabin", Arial, Tahoma, sans-serif;
+    font-weight: lighter;
+    
+}
+
+.about-para{
+    color: grey;
+    font-size: large;
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Home | Truvaile</title>
+    <link rel="icon" href="Images/logo01.png">
+    <link rel="stylesheet" href= "css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+</head>
+<body>
+    <header class="main" style="background-image: url('Images/BgHome.jpg')";>
+        <div class="header-cotainer">
+            <div class="top-container">
+                <nav class="navigation container">
+                    <div class="nav-brand">Truvaile</div>
+              
+                    <ul class="list-non-bullet nav-pills">
+                        <li class="list-item-inline">
+                            <a class="link link-active" href="#">Home</a>
+                        </li>
+                        <li class="list-item-inline">
+                            <a class="link" href="about.html">About us</a>
+                        </li>
+                        <li class="list-item-inline">
+                            <a class="link" href="working.html">How it works</a>
+                        </li>
+                        <li class="list-item-inline">
+                            <a class="link" href="survey.jsp">The Survey</a>
+                        </li>
+                        <li class="list-item-inline">
+                            <a class="link" href="contact.html">Contact us</a>
+                        </li>
+                        <li class="list-item-inline">
+                            <div class="dropdown" style="background-color: transparent;">
+                                <button class="dropbtn"> 
+                                    <i class="far fa-user-circle"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                  <a href="login.html">Login</a>
+                                  <a href="signup.html">Signup</a>
+                                  <a href="WelcomeAdmin.html">Admin</a><hr/>
+                                  <a href="Logout">Logout</a>
+                                 
+                                </div>
+                              </div>
+                        </li>
+                    </ul>
+                 </nav>
+            </div>
+                
+             <div class="container-caption">
+            <h1> It's not about the destination, It's about the journey! 
+                <br>
+                But What if the destination is unknown ?
+             </h1>
+             <p class="caption-small"><small>The best part? The destinaton you travel is a total surprise!</small></p>
+             <li class="list-item-inline">
+                <a class="link link-secondary" href="survey.jsp" style="font-family: Cabin, Arial, Tahoma, sans-serif; font-size: small; text-transform: uppercase;">Suprise Me</a>
+            </li>
+            </div>
+        </div>
+       
+</header>
+
+<section class="card-section">
+    <h2 class="heading">How it Works</h2>
+    <div class="card">
+        <img class="avatar" src="Images/01.svg" >
+        <div class="card-cotainer">
+            <h4  class="card-heading"> Fill out the survey </h4>
+            <p>Answer a few quick question travel date, budget & interests. </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img class="avatar" src="Images/02.svg" >
+        <div class="card-cotainer">
+            <h4 class="card-heading">Sit back and relax </h4>
+            <p>Relax while our travel experts choose a surprise destination. </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img class="avatar" src="Images/03.svg" >
+        <div class="card-cotainer">
+            <h4 class="card-heading">keep going </h4>
+            <p>We plan everything, you just need to pack up and enjoy you holiday! </p>
+        </div>
+    </div>
+
+</section>
+
+<section class="image-section">
+    <h2 class="heading">Check out where we sent some of our travelers on their surprise trips!</h2>
+    <!-- Slideshow Container -->
+    <div class="slideshow-container">
+        <!-- Full width images  -->
+        <div class="mySlides fade">
+           <img class="image-slide" src="Images/slide01.jpg">
+        </div>
+        <div class="mySlides fade">
+            <img class="image-slide" src="Images/slide02.jpg">
+         </div>
+         <div class="mySlides fade">
+            <img class="image-slide" src="Images/slide03.jpg">
+         </div>
+         <div class="mySlides fade">
+            <img class="image-slide" src="Images/slide04.jpg">
+         </div>
+         <div class="mySlides fade">
+            <img class="image-slide" src="Images/slide05.jpg">
+         </div>
+         <div class="mySlides fade">
+            <img class="image-slide" src="Images/slide06.jpg">
+         </div>
+         <div class="mySlides fade">
+            <img class="image-slide" src="Images/slide07.jpg">
+         </div>
+         <div class="mySlides fade">
+            <img class="image-slide" src="Images/slide08.jpg">
+         </div>
+         <div class="mySlides fade">
+            <img class="image-slide" src="Images/slide09.jpg">
+         </div>
+     <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  <br>
+  <div class="slide-dot" style="text-align: center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+  </div>
+</section>
+    <script>
+        var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+<footer class="footer">
+    
+    <div class="footer-header">
+        <div class="icon">
+          <a href="#" class="link"><i class="fas fa-chevron-up"></i></a></div>
+        <p>© 2020 Truvaile Trips Pvt Ltd.</p>
+    </div>
+    <ul class="social-link list-non-bullet">
+        <li class="list-item-inline">
+            <i class="fab fa-linkedin-in"></i> 
+        </li>
+        <li class="list-item-inline">
+            <i class="fab fa-facebook-f"></i> 
+        </li>
+        <li class="list-item-inline">
+           <i class="fas fa-play"></i> 
+        </li>
+        <li class="list-item-inline">
+            <i class="fab fa-instagram"></i> 
+        </li>
+        <li class="list-item-inline">
+          <i class="fab fa-twitter"></i>
+        </li>
+    </ul>
+
+
+</footer>
+
+
+
+</body>
+</html>

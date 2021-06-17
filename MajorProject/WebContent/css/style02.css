@@ -1,0 +1,56 @@
+.working-steps-container{
+    margin: 2rem 0rem;
+   text-align: center;
+}
+.conntainer{
+    padding: 3rem;
+}
+
+.How-it-works{
+    margin: 0rem 3rem;
+}
+hr{
+    margin: 2rem 0rem;
+}
+img{
+    padding: 2rem;
+    border: 2px solid black;
+    border-color: rgba(0,0,0,.08);
+    border-radius: 100%;
+    aspect-ratio: auto 70 / 70;
+    position: relative;
+}
+
+
+.working-steps-content{
+   padding-top: 3rem;
+   line-height: 2rem;
+}
+
+.working-steps-content h4{
+    font-size: x-large;
+}
+
+.para{
+    color: grey;
+    font-size: large;
+}
+
+.survey{
+    padding: 3rem 5rem 5rem 5rem;
+}
+
+.survey .paragraph{
+  margin: 1rem ;
+  padding: 1rem 0rem;
+  font-size:x-large;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: grey;
+  line-height: 2rem;
+  }
+
+.survey a{
+    padding: 1rem 2rem;
+}
+

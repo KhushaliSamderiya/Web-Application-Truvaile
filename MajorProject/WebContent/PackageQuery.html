@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Package Query | Truvaile</title>
+    <link rel="icon" href="/Images/logo01.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style05.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" 
+    integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <style>
+        .text{
+            height: 1.5rem;
+    width: 13rem;
+    border-radius: 7px;
+    border-width: 0.5px;
+    background-color: #F3F4F6;
+    padding: 0.1rem;
+        }
+    label{
+        font-style: italic;
+    }
+
+    .link :hover{
+        background-color: #FCA5A5;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <header class="main">
+        <div class="header-cotainer">
+           <div class="top-container">
+                <nav class="navigation container">
+                    <div class="nav-brand">Truvaile</div>
+                    <ul class="list-non-bullet nav-pills">
+                       <li class="list-item-inline">
+	                	  <a class="link" href="home.html">Home</a>
+	                	    </li>
+	                	<li class="list-item-inline">
+	                	  <a class="link" href="MyAccount">My Account</a>
+	                	    </li>    
+                        <li class="list-item-inline">
+	                	  <a class="link" href="Wishlist">My Wishlist</a>
+	                		</li>
+	              		<li class="list-item-inline">
+	               		   <a class="link " href="UserViewBooking">Booked Packages</a>
+	               		  </li>
+	               	     <li class="list-item-inline">
+	 	                    <a class="link" href="Modify">PackageQuery</a>
+	 	                  </li>
+	                    <li class="list-item-inline">
+	                	   <a class="link" href="Logout">Logout</a>
+	                    </li>
+                             
+                      
+                    </ul>
+                 </nav>
+            </div>
+         </div>
+       </header>
+       
+ <section style="margin: 1rem; padding: 1rem; width: 90%;height: 85vh;">
+
+<div class="query-container" style= "display: inline-block;margin-left: 7rem" >
+<div class="query-form" style="float:left;margin-left: -15rem;">
+<form action="Modify" method="post" >
+    <fieldset style="border: 3px solid  #C6F2D6; height: 31rem; width: 45rem; margin-top: 1rem; border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1)">
+  <div class="box" style="padding: 2rem 1rem; " >
+  <h4 style="text-align: center; font-size: x-large; text-transform: uppercase; font-weight: 100;" >Package Query</h4><br><br>      
+<label>User Name:</label>
+  <input type="text" class="text" name="nname"><br><br>
+  
+  <label >Booking ID: </label>
+  <input type="text" class="text"  name="nid"><br><br>
+  
+  <label>Please select any one option:</label><br><br>
+  <input type="radio" id="Modify" name="update" value="Changes">
+  <label for="Modify">Modify</label><br>
+  <input type="radio" id="Cancel" name="update" value="Cancelation">
+  <label for="Cancel">Cancel</label><br>
+  <input type="radio" id="other" name="update" value="other">
+  <label for="other">Other</label><br><br>
+  
+  <label>Specify WHY?</label><br><br>
+  <textarea id="message" name="visitor_message" placeholder="Tell us why do you want to changes/cancellation in package" required style="height: 5rem; width: 30rem; padding:1rem;"  ></textarea><br><br>
+  <input type="submit" value="submit" class="link" style="margin-top: -0.05rem ; text-align: center; border: 2px solid #FCA5A5; margin-top: 1rem; text-transform:uppercase; width: 10rem; border-radius: 5px; background-color: white;" />
+  </div>
+</fieldset>
+</form>
+</div>
+<div class="query-img" style="float:right; margin-top: 5rem; margin-right: -15rem;" >
+ <img src="Images/packageQuery.svg" height= "600vh" width="400rem">
+</div>
+</div>
+</section>      
+  <footer class="footer">
+    <div class="footer-header">
+        <div class="icon">
+        <a href="#" class="link"><i class="fas fa-chevron-up"></i></a></div>
+        <p>© 2020 Truvaile Trips Pvt Ltd.</p>
+    </div>
+    <ul class="social-link list-non-bullet">
+        <li class="list-item-inline">
+            <a href="#" class="link"><i class="fab fa-linkedin-in"></i></a> 
+        </li>
+        <li class="list-item-inline">
+            <a href="#" class="link"><i class="fab fa-facebook-f"></i></a> 
+        </li>
+        <li class="list-item-inline">
+            <a href="#" class="link"><i class="fas fa-play"></i></a> 
+        </li>
+        <li class="list-item-inline">
+            <a href="#" class="link"><i class="fab fa-instagram"></i></a> 
+        </li>
+        <li class="list-item-inline">
+            <a href="#" class="link"><i class="fab fa-twitter"></i></a> 
+        </li>
+    </ul>
+
+
+</footer>
+</body>
+</html>

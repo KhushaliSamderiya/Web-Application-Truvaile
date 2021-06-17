@@ -1,0 +1,46 @@
+.contact-us{
+    margin: 2rem 10rem;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+   
+}
+.get-in-touch{
+    padding-right: 5rem;
+}
+.address{
+    font-size: x-large;
+}
+
+p{
+    font-size: medium;
+
+}
+
+input, textarea{
+    padding: 0.5rem 1rem;
+    text-transform: capitalize;
+}
+
+.form-container{
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border: 1px solid #E7E5E4;
+    background-color: #F3F4F6; */
+    padding: 2rem 4rem;
+}
+
+.form-container .btn-submit{
+    padding:0.5rem 9rem;
+    background-color:var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.form-container .input{
+    background-color:#F3F4F6 ;
+}
+
+#email{
+    padding:0.5rem 7rem;
+}

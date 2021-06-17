@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login | Truvaile</title>
+    <link rel="icon" href="Images/logo01.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style05.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+</head>
+<body>
+    <header class="main">
+        <div class="header-cotainer">
+           <div class="top-container">
+                <nav class="navigation container">
+                    <div class="nav-brand">Truvaile</div>
+                    <ul class="list-non-bullet nav-pills">
+                        <li class="list-item-inline">
+                            <a class="link " href="home.html">Home</a>
+                        </li>
+                        <li class="list-item-inline">
+                            <a class="link" href="about.html">About us</a>
+                        </li>
+                        <li class="list-item-inline">
+                            <a class="link" href="working.html">How it works</a>
+                        </li>
+                        <li class="list-item-inline">
+                            <a class="link" href="survey.jsp">The Survey</a>
+                        </li>
+                        <li class="list-item-inline">
+                            <a class="link" href="contact.html">Contact us</a>
+                        </li>
+                        <li class="list-item-inline">
+                            <div class="dropdown" style="background-color: transparent;">
+                                <button class="dropbtn"> 
+                                    <i class="far fa-user-circle"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                  <a href="login.html">Login</a>
+                                  <a href="signup.html">Signup</a>
+                               </div>
+                              </div>
+                        </li>
+                    </ul>
+                 </nav>
+            </div>
+         </div>
+       </header>
+<section class="loginform">
+   <h3 style= "margin-top: -5rem ">Login for exciting trips!!<h3><br><br>
+    <div class="wrapper" style= "margin-top: -3rem ">
+        <div class="title">
+  Welcome Back!</div>
+  <form action="LoginServlet" method="POST">
+          <div class="field">
+            <input type="text" name="username" required>
+            <label>Username</label>
+          </div>
+  <div class="field">
+            <input type="password" name="password" required>
+            <label>Password</label>
+          </div>
+  <div class="content">
+            <div class="checkbox">
+              <input type="checkbox" id="remember-me">
+              <label for="remember-me">Remember me</label>
+            </div>
+  <div class="pass-link">
+  <a href="#">Forgot password?</a></div>
+  </div>
+  <div class="field">
+            <input type="submit" value="Login">
+          </div>
+  <div class="signup-link">
+  Not a member? <a href="signup.html">Signup now</a></div>
+  </form>
+  </div>
+  
+  
+</section>
+<footer class="footer">
+    
+    <div class="footer-header">
+        <div class="icon">
+            <a href="#" class="link"> <i class="fas fa-chevron-up"></i></a></div>
+        <p>© 2020 Truvaile Trips Pvt Ltd.</p>
+    </div>
+    <ul class="social-link list-non-bullet">
+        <li class="list-item-inline">
+            <a href="#" class="link"><i class="fab fa-linkedin-in"></i></a> 
+        </li>
+        <li class="list-item-inline">
+            <a href="#" class="link"><i class="fab fa-facebook-f"></i></a> 
+        </li>
+        <li class="list-item-inline">
+            <a href="#" class="link"><i class="fas fa-play"></i></a> 
+        </li>
+        <li class="list-item-inline">
+            <a href="#" class="link"><i class="fab fa-instagram"></i></a> 
+        </li>
+        <li class="list-item-inline">
+            <a href="#" class="link"><i class="fab fa-twitter"></i></a> 
+        </li>
+    </ul>
+
+
+</footer>
+</body>
+</html>
+
+
+    
